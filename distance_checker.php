@@ -2,7 +2,7 @@
 $user_location = readline("Enter Your Address : ");
 $target_location = readline("Enter Target Location : ");
 
-$api = file_get_contents("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=.$user_location.&destinations=.$target_location.&key=AIzaSyCq7pLEb7cIsE8TFlGPrKhY2crxIZn8Bls");
+$api = file_get_contents("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=.$user_location.&destinations=.$target_location.&key={YOUR GOOGLE MAP API here}");
 $callback = json_decode($api);
 echo "\n\n";
 
